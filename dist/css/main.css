@@ -3,7 +3,7 @@
   left: 20px;
   top: 25px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -13,9 +13,17 @@
   transition: 0.3s;
 }
 
+svg:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
 nav {
   width: 100%;
   background: #000;
+  z-index: 1;
 }
 
 nav ul {
@@ -59,7 +67,6 @@ nav .nav-logo {
   font-family: 'Perpetua';
   letter-spacing: 0.2rem;
   font-size: 2rem;
-  max-height: 70px;
 }
 
 @media (max-width: 940px) {
@@ -83,6 +90,9 @@ nav .nav-logo {
 @media (max-width: 760px) {
   .menu-toggle {
     display: inline;
+  }
+  nav {
+    position: absolute;
   }
   nav ul {
     -webkit-box-orient: vertical;
@@ -113,16 +123,39 @@ nav .nav-logo {
   }
 }
 
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("/dist/img/london_hero.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 50px 0;
+  font-family: 'Perpetua';
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
+  overflow: hidden;
 }
 
 .container {
-  height: 10vh;
+  height: 100vh;
   width: 100%;
   position: relative;
 }

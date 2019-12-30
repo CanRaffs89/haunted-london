@@ -4,7 +4,7 @@
     left: 20px;
     top: 25px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -13,11 +13,18 @@
     transition: 0.3s;
 }
 
+svg {
+    &:hover {
+        transform: rotate(360deg);
+        transition: 0.5s all;
+    }
+}
+
 // Navbar
 nav {
     width: 100%;
     background: #000;
-    
+    z-index: 1;
 
     ul {
         padding: 0;
@@ -53,7 +60,6 @@ nav {
         font-family: 'Perpetua';
         letter-spacing: 0.2rem;
         font-size: 2rem;
-        max-height: 70px;
     }
 }
 
@@ -87,6 +93,9 @@ nav {
     }
     
     nav {
+        // Stops dropdown menu pushing content down
+        position: absolute;
+
         ul {
             flex-direction: column;
         }

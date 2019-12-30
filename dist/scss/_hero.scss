@@ -1,0 +1,21 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('/dist/img/london_hero.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+    h1 {
+        margin: 0;
+        padding: 50px 0;
+        font-family: 'Perpetua';
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+    }
+}
