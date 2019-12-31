@@ -20,11 +20,22 @@ svg {
     }
 }
 
+// Search Icon
+.search-icon {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 2;
+
+    
+}
+
 // Navbar
 nav {
     width: 100%;
     background: #000;
     z-index: 1;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
 
     ul {
         padding: 0;
@@ -71,6 +82,13 @@ nav {
 
         .nav-logo {
             font-size: 1.8rem;
+        }
+    }
+
+    .search-icon {
+        img {
+            width: 20px;
+            height: 20px;
         }
     }
 }
