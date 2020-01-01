@@ -1,0 +1,109 @@
+#section {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+
+    .section-left {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-family: 'Perpetua';
+            font-size: 2rem;
+            letter-spacing: 0.15rem;
+            font-weight: 300;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+    }
+
+    #section-button {
+        margin-top: 20px;
+    }
+
+    .section-left-text-wrapper {
+        width: 80%;
+        height: 80%;
+    }
+
+    .section-right {
+        height: 100%;
+        width: 50%;
+    }
+
+    #section-image-01 {
+        background: url('/dist/img/underground_sign.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1170px) {
+    #section {
+        .section-left {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #section {
+        height: 60vh;
+
+        .section-left {
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #section-button {
+        font-size: 1.2rem;
+        height: 45px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 700px) {
+    #section {
+        flex-direction: column;
+
+        .section-left, .section-right {
+            width: 100%;
+        }
+
+        .section-left {
+            background: url('/dist/img/underground_sign.jpg') no-repeat 20% 50%;
+            background-size: 200%;
+        }
+
+        .section-right {
+            display: none;
+        }
+
+        .section-left-text-wrapper {
+            background: rgba(0,0,0,0.7);
+            padding: 45px 50px;
+        }
+    }
+}

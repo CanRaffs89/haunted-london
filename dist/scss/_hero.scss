@@ -1,6 +1,6 @@
 #hero {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,13 +11,14 @@
     h1 {
         margin: 0 0 60px 0;
         padding: 50px 20px;
-        width: 100%;
+        width: 75%;
         font-family: 'Perpetua';
         font-weight: 300;
         font-size: 3rem;
         letter-spacing: 0.3rem;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.3);
+        border: 1px solid #fff;
     }
 }
 
@@ -33,6 +34,7 @@
     #hero {
         h1 {
             font-size: 2rem;
+            letter-spacing: 0.2rem;
         }
     }
 }
