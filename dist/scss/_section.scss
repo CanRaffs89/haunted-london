@@ -1,6 +1,6 @@
 #section {
     width: 100%;
-    height: 70vh;
+    height: 65%;
     margin: 0;
     padding: 0;
     background: #000;
@@ -23,7 +23,7 @@
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 300;
         }
     }
@@ -46,6 +46,11 @@
         background: url('/dist/img/underground_sign.jpg') no-repeat 50% 50%;
         background-size: cover;
     }
+
+    #section-image-02 {
+        background: url('/dist/img/halloween_cat.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 1170px) {
@@ -64,8 +69,6 @@
 
 @media (max-width: 900px) {
     #section {
-        height: 60vh;
-
         .section-left {
             h2 {
                 font-size: 1.6rem;
@@ -87,23 +90,29 @@
 @media (max-width: 700px) {
     #section {
         flex-direction: column;
-
+        height: 100vh;
+        
         .section-left, .section-right {
             width: 100%;
         }
 
+        .section-left-text-wrapper {
+            background: rgba(0,0,0,0.7);
+            height: 100%;
+        }
+
         .section-left {
-            background: url('/dist/img/underground_sign.jpg') no-repeat 20% 50%;
-            background-size: 200%;
+            height: 60%;
+            min-height: 350px;
+
+            p.hide-on-mobile {
+                display: none;
+            } 
         }
 
         .section-right {
-            display: none;
-        }
-
-        .section-left-text-wrapper {
-            background: rgba(0,0,0,0.7);
-            padding: 45px 50px;
+            height: 40%;
+            min-height: 220px;
         }
     }
 }

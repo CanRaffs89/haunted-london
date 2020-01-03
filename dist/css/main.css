@@ -25,6 +25,14 @@ svg:hover {
   top: 25px;
   right: 20px;
   z-index: 2;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 nav {
@@ -121,6 +129,7 @@ nav .nav-logo {
   nav .nav-link {
     display: none;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
   }
   .active {
     display: inline !important;
@@ -152,7 +161,7 @@ nav .nav-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/dist/img/london_hero.jpg") no-repeat 50% 50%;
+  background: url("/dist/img/london-2614011_1920.jpg") no-repeat 25% 50%;
   background-size: cover;
 }
 
@@ -165,7 +174,7 @@ nav .nav-logo {
   font-size: 3rem;
   letter-spacing: 0.3rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
 }
 
@@ -182,7 +191,11 @@ nav .nav-logo {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 300px) {
+  #hero {
+    min-height: 476px;
+    height: auto;
+  }
   #hero h1 {
     font-size: 1.5rem;
     top: 40%;
@@ -222,7 +235,7 @@ button a:hover {
 
 #section {
   width: 100%;
-  height: 70vh;
+  height: 65%;
   margin: 0;
   padding: 0;
   background: #000;
@@ -255,7 +268,7 @@ button a:hover {
 }
 
 #section .section-left p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -278,6 +291,11 @@ button a:hover {
   background-size: cover;
 }
 
+#section #section-image-02 {
+  background: url("/dist/img/halloween_cat.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
 @media (max-width: 1170px) {
   #section .section-left h2 {
     font-size: 1.8rem;
@@ -288,9 +306,6 @@ button a:hover {
 }
 
 @media (max-width: 900px) {
-  #section {
-    height: 60vh;
-  }
   #section .section-left h2 {
     font-size: 1.6rem;
   }
@@ -310,20 +325,64 @@ button a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100vh;
   }
   #section .section-left, #section .section-right {
     width: 100%;
   }
-  #section .section-left {
-    background: url("/dist/img/underground_sign.jpg") no-repeat 20% 50%;
-    background-size: 200%;
-  }
-  #section .section-right {
-    display: none;
-  }
   #section .section-left-text-wrapper {
     background: rgba(0, 0, 0, 0.7);
-    padding: 45px 50px;
+    height: 100%;
+  }
+  #section .section-left {
+    height: 60%;
+    min-height: 350px;
+  }
+  #section .section-left p.hide-on-mobile {
+    display: none;
+  }
+  #section .section-right {
+    height: 40%;
+    min-height: 220px;
+  }
+}
+
+#testimonial {
+  width: 100%;
+  height: 25%;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonial h2 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+#testimonial h3 {
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+#testimonial-text {
+  width: 20%;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  #testimonial h2 {
+    font-size: 1rem;
+  }
+  #testimonial h3 {
+    font-size: 1rem;
   }
 }
 

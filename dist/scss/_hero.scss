@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('/dist/img/london_hero.jpg') no-repeat 50% 50%;
+    background: url('/dist/img/london-2614011_1920.jpg') no-repeat 25% 50%;
     background-size: cover;
 
     h1 {
@@ -17,7 +17,7 @@
         font-size: 3rem;
         letter-spacing: 0.3rem;
         text-align: center;
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.5);
         border: 1px solid #fff;
     }
 }
@@ -39,8 +39,11 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 300px) {
     #hero {
+        min-height: 476px;
+        height: auto;
+
         h1 {
             font-size: 1.5rem;
             top: 40%;
