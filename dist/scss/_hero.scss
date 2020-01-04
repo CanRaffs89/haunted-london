@@ -32,18 +32,19 @@
 
 @media (max-width: 840px) {
     #hero {
+        min-height: 476px;
+        height: auto;
+
         h1 {
             font-size: 2rem;
             letter-spacing: 0.2rem;
+            padding: 30px 20px;
         }
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     #hero {
-        min-height: 476px;
-        height: auto;
-
         h1 {
             font-size: 1.5rem;
             top: 40%;
