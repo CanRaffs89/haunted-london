@@ -39,6 +39,7 @@ nav {
   width: 100%;
   z-index: 1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  background: #000;
 }
 
 nav ul {
@@ -399,11 +400,51 @@ button a:hover {
   }
 }
 
+#footer #social {
+  margin: 10px auto;
+  height: 50px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#footer #social a {
+  height: 50px;
+  width: 50px;
+}
+
+#footer #social a img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  height: 50px;
+  width: 50px;
+}
+
 #footer p {
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 760px) {
+  #footer #social {
+    width: auto;
+    height: 25px;
+  }
+  #footer #social a {
+    height: 25px;
+    width: 25px;
+  }
+  #footer #social a img {
+    height: 25px;
+    width: 25px;
+  }
 }
 
 body {
