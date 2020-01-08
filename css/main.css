@@ -278,17 +278,17 @@ button a:hover {
 }
 
 #section #section-image-01 {
-  background: url("/img/underground_sign.jpg") no-repeat 50% 50%;
+  background: url("../img/underground_sign.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #section #section-image-02 {
-  background: url("/img/halloween_cat.jpg") no-repeat 50% 50%;
+  background: url("../img/halloween_cat.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #section #section-image-03 {
-  background: url("/img/sherlock_statue.jpg") no-repeat 50% 35%;
+  background: url("../img/sherlock_statue.jpg") no-repeat 50% 35%;
   background-size: cover;
 }
 
@@ -423,28 +423,28 @@ button a:hover {
 }
 
 #footer #social a#social-twitter {
-  background: url("/img/twitter.svg") no-repeat;
+  background: url("../img/twitter.svg") no-repeat;
   background-size: cover;
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
 #footer #social a#social-facebook {
-  background: url("/img/facebook.svg") no-repeat;
+  background: url("../img/facebook.svg") no-repeat;
   background-size: cover;
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
 #footer #social a#social-instagram {
-  background: url("/img/instagram.svg") no-repeat;
+  background: url("../img/instagram.svg") no-repeat;
   background-size: cover;
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
 #footer #social a#social-youtube {
-  background: url("/img/youtube.svg") no-repeat;
+  background: url("../img/youtube.svg") no-repeat;
   background-size: cover;
   -webkit-filter: invert(100%);
           filter: invert(100%);
