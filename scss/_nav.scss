@@ -20,20 +20,6 @@ svg {
     }
 }
 
-// Search Icon
-.search-icon {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    z-index: 2;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.2);
-        transition: 0.3s ease-in-out;
-    }    
-}
-
 // Navbar
 nav {
     width: 100%;
@@ -86,13 +72,6 @@ nav {
 
         .nav-logo {
             font-size: 1.8rem;
-        }
-    }
-
-    .search-icon {
-        img {
-            width: 20px;
-            height: 20px;
         }
     }
 }

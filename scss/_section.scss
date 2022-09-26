@@ -1,8 +1,8 @@
 #section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
     .section-text {
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -30,6 +30,10 @@
     .section-text-wrapper {
         width: 80%;
         margin: 50px 0;
+    }
+
+    .section-image {
+        width: 50%;
     }
 
     #section-image-01 {
@@ -84,13 +88,20 @@
 
 @media (max-width: 760px) {
     #section {
-        grid-template-columns: 1fr;
+        flex-direction: column;
 
         .section-image {
             height: 200px;
+            width: 100%;
+        }
+
+        #reverse-order-on-mobile {
+            order: -1;
         }
 
         .section-text {
+            width: 100%;
+
             p.hide-on-mobile {
                 display: none;
             }

@@ -9,30 +9,12 @@
 
 .menu-active {
   opacity: 0;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 svg:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 0.5s all;
+  transform: rotate(360deg);
   transition: 0.5s all;
-}
-
-.search-icon {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.search-icon:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 nav {
@@ -41,46 +23,33 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   background: #000;
 }
-
 nav ul {
   padding: 0;
   margin: 0 auto;
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 nav ul li {
   list-style: none;
   margin: 20px;
 }
-
 nav ul li a {
   color: #fff;
   text-decoration: none;
 }
-
 nav ul li a:hover {
   color: transparent;
   text-shadow: 0 0 5px #fff;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
-
 nav .nav-link {
   font-weight: 300;
   font-size: 1.4rem;
 }
-
 nav .nav-logo {
-  font-family: 'Perpetua';
+  font-family: "Perpetua";
   letter-spacing: 0.2rem;
   font-size: 2rem;
 }
@@ -92,12 +61,7 @@ nav .nav-logo {
   nav .nav-logo {
     font-size: 1.8rem;
   }
-  .search-icon img {
-    width: 20px;
-    height: 20px;
-  }
 }
-
 @media (max-width: 840px) {
   nav .nav-link {
     font-size: 1.1rem;
@@ -106,24 +70,19 @@ nav .nav-logo {
     font-size: 1.7rem;
   }
 }
-
 @media (max-width: 760px) {
   .menu-toggle {
     display: inline;
   }
+
   nav {
     position: absolute;
   }
   nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   nav .nav-logo {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     font-size: 1.6rem;
   }
   nav .nav-link {
@@ -131,11 +90,11 @@ nav .nav-logo {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
   }
+
   .active {
     display: inline !important;
   }
 }
-
 @media (max-width: 325px) {
   nav .nav-link {
     font-size: 1rem;
@@ -144,32 +103,21 @@ nav .nav-logo {
     font-size: 1.5rem;
   }
 }
-
 #hero {
   width: 100%;
   height: 95vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: url("../img/london-hero.jpg") no-repeat 25% 50%;
   background-size: cover;
 }
-
 #hero h1 {
   margin: 0 0 60px 0;
   padding: 50px 20px;
   width: 75%;
-  font-family: 'Perpetua';
+  font-family: "Perpetua";
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: 0.3rem;
@@ -183,7 +131,6 @@ nav .nav-logo {
     font-size: 2.5rem;
   }
 }
-
 @media (max-width: 840px) {
   #hero {
     min-height: 476px;
@@ -195,34 +142,29 @@ nav .nav-logo {
     padding: 30px 20px;
   }
 }
-
 @media (max-width: 320px) {
   #hero h1 {
     font-size: 1.5rem;
     top: 40%;
   }
 }
-
 button {
   width: 200px;
   height: 56px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   background: #000;
   border: 1px solid #fff;
 }
-
 button a {
   text-decoration: none;
   color: #fff;
 }
-
 button a:hover {
   color: transparent;
   text-shadow: 0 0 5px #fff;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
@@ -233,28 +175,17 @@ button a:hover {
     width: 160px;
   }
 }
-
 #section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-#section .section-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
+#section .section-text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #section .section-text h2 {
-  font-family: 'Perpetua';
+  font-family: "Perpetua";
   font-size: 2rem;
   letter-spacing: 0.15rem;
   font-weight: 300;
@@ -262,31 +193,28 @@ button a:hover {
   padding-bottom: 20px;
   margin: 0;
 }
-
 #section .section-text p {
   font-size: 1.2rem;
   font-weight: 300;
 }
-
 #section #section-button {
   margin-top: 20px;
 }
-
 #section .section-text-wrapper {
   width: 80%;
   margin: 50px 0;
 }
-
+#section .section-image {
+  width: 50%;
+}
 #section #section-image-01 {
   background: url("../img/underground_sign.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
-
 #section #section-image-02 {
   background: url("../img/halloween_cat.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
-
 #section #section-image-03 {
   background: url("../img/sherlock_statue.jpg") no-repeat 50% 35%;
   background-size: cover;
@@ -300,7 +228,6 @@ button a:hover {
     font-size: 1.1rem;
   }
 }
-
 @media (max-width: 900px) {
   #section .section-text h2 {
     font-size: 1.6rem;
@@ -308,20 +235,26 @@ button a:hover {
   #section .section-text p {
     font-size: 1rem;
   }
+
   #section-button {
     font-size: 1.2rem;
     height: 45px;
     width: 160px;
   }
 }
-
 @media (max-width: 760px) {
   #section {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    flex-direction: column;
   }
   #section .section-image {
     height: 200px;
+    width: 100%;
+  }
+  #section #reverse-order-on-mobile {
+    order: -1;
+  }
+  #section .section-text {
+    width: 100%;
   }
   #section .section-text p.hide-on-mobile {
     display: none;
@@ -330,32 +263,22 @@ button a:hover {
     margin: 30px 0;
   }
 }
-
 @media (max-width: 400px) {
   #section .section-image {
     height: 100px;
   }
 }
-
 #testimonial {
   width: 100%;
   height: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 #testimonial h2 {
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-
 #testimonial h3 {
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -374,13 +297,9 @@ button a:hover {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 760px) {
   #testimonial {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: 200px;
   }
   #testimonial h2 {
@@ -394,62 +313,50 @@ button a:hover {
     letter-spacing: 0.1rem;
     margin: 0;
   }
+
   #testimonial-text {
     width: 100%;
   }
 }
-
 @media (max-width: 400px) {
   #testimonial {
     height: 125px;
   }
 }
-
+#footer {
+  padding: 10px 0;
+}
 #footer #social {
   margin: 20px auto;
   height: 50px;
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 #footer #social a {
   height: 50px;
   width: 50px;
 }
-
 #footer #social a#social-twitter {
   background: url("../img/twitter.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
-
 #footer #social a#social-facebook {
   background: url("../img/facebook.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
-
 #footer #social a#social-instagram {
   background: url("../img/instagram.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
-
 #footer #social a#social-youtube {
   background: url("../img/youtube.svg") no-repeat;
   background-size: cover;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
-
 #footer p {
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
@@ -475,12 +382,11 @@ button a:hover {
     width: 30px;
   }
 }
-
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
   background: #000;
 }
@@ -490,3 +396,5 @@ body {
   width: 100%;
   position: relative;
 }
+
+/*# sourceMappingURL=main.css.map */
