@@ -21,3 +21,9 @@ body {
     position: relative;
 }
 
+@media (max-width: 760px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
