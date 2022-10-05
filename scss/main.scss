@@ -3,7 +3,6 @@
 @import 'button';
 @import 'section';
 @import 'testimonial';
-@import 'about';
 @import 'faq';
 @import 'footer';
 
@@ -29,6 +28,12 @@ body {
     padding: 0 70px;
 } 
 
+.content-text, .content-image {
+    width: 45%;
+    height: 70%;
+    margin: 50px 0;
+}
+
 h1 {
     font-weight: 400;
 }
@@ -48,11 +53,23 @@ p {
     font-weight: 300;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 810px) {
     .content-container {
         flex-direction: column;
-        height: auto;
         padding: 70px 50px 0 50px;
+        justify-content: initial;
+    }
+
+    .content-text, .content-image {
+        width: 100%;
+    }
+
+    .content-text {
+        height: auto;
+    }
+
+    .content-image {
+        margin: 0;
     }
 
     .hide-on-mobile {
@@ -66,5 +83,16 @@ p {
     p {
         font-size: 1rem;
     }
+}
+
+// Images
+#about-image {
+    background: url("../img/about-image.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#contact-map {
+    background: url("../img/contact-map.png") no-repeat 50% 50%;
+    background-size: contain;
 }
 
