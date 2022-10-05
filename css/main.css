@@ -404,6 +404,10 @@ body {
   padding: 0 70px;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 h2 {
   font-family: "Perpetua";
   font-size: 2rem;
@@ -430,7 +434,7 @@ p {
     display: none !important;
   }
 
-  h2 {
+  h1, h2 {
     font-size: 1.6rem;
   }
 
