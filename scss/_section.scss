@@ -6,21 +6,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        h2 {
-            font-family: 'Perpetua';
-            font-size: 2rem;
-            letter-spacing: 0.15rem;
-            font-weight: 300;
-            border-bottom: 1px solid #fff;
-            padding-bottom: 20px;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
     }
 
     #section-button {
@@ -67,18 +52,6 @@
 }
 
 @media (max-width: 900px) {
-    #section {
-        .section-text {
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
-
     #section-button {
         font-size: 1.2rem;
         height: 45px;
