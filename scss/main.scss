@@ -3,6 +3,7 @@
 @import 'button';
 @import 'section';
 @import 'testimonial';
+@import 'tours';
 @import 'faq';
 @import 'footer';
 
@@ -16,7 +17,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -87,12 +88,29 @@ p {
 
 // Images
 #about-image {
-    background: url("../img/about-image.jpg") no-repeat 50% 50%;
+    background: url('../img/about-image.jpg') no-repeat 50% 50%;
     background-size: cover;
+    height: 400px;
 }
 
 #contact-map {
-    background: url("../img/contact-map.png") no-repeat 50% 50%;
+    background: url('../img/contact-map.png') no-repeat 50% 50%;
     background-size: contain;
+    height: 500px;
+}
+
+#tube-tour-img {
+    background: url('../img/underground_sign.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#sherlock-tour-img {
+    background: url('../img/sherlock_statue.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#halloween-tour-img {
+    background: url('../img/halloween_cat.jpg') no-repeat 50% 35%;
+    background-size: cover;
 }
 

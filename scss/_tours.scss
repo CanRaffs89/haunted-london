@@ -1,0 +1,23 @@
+.tour-container {
+    width: 30%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .tour-image {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 810px) {
+    .tour-container {
+        width: 100%;
+
+        .tour-image {
+            height: 200px;
+        }
+    }
+}

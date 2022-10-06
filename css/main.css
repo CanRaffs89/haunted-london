@@ -151,6 +151,7 @@ nav .nav-logo {
 button {
   width: 200px;
   height: 56px;
+  margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
@@ -184,27 +185,12 @@ button a:hover {
   justify-content: center;
   align-items: center;
 }
-#section #section-button {
-  margin-top: 20px;
-}
 #section .section-text-wrapper {
   width: 80%;
   margin: 50px 0;
 }
 #section .section-image {
   width: 50%;
-}
-#section #section-image-01 {
-  background: url("../img/underground_sign.jpg") no-repeat 50% 50%;
-  background-size: cover;
-}
-#section #section-image-02 {
-  background: url("../img/halloween_cat.jpg") no-repeat 50% 50%;
-  background-size: cover;
-}
-#section #section-image-03 {
-  background: url("../img/sherlock_statue.jpg") no-repeat 50% 35%;
-  background-size: cover;
 }
 
 @media (max-width: 1170px) {
@@ -213,13 +199,6 @@ button a:hover {
   }
   #section .section-text p {
     font-size: 1.1rem;
-  }
-}
-@media (max-width: 900px) {
-  #section-button {
-    font-size: 1.2rem;
-    height: 45px;
-    width: 160px;
   }
 }
 @media (max-width: 760px) {
@@ -247,7 +226,7 @@ button a:hover {
 }
 #testimonial {
   width: 100%;
-  height: 25%;
+  height: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -277,7 +256,6 @@ button a:hover {
 @media (max-width: 760px) {
   #testimonial {
     flex-direction: column;
-    height: 200px;
   }
   #testimonial h2 {
     display: inline;
@@ -298,6 +276,27 @@ button a:hover {
 @media (max-width: 400px) {
   #testimonial {
     height: 125px;
+  }
+}
+.tour-container {
+  width: 30%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.tour-container .tour-image {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+@media (max-width: 810px) {
+  .tour-container {
+    width: 100%;
+  }
+  .tour-container .tour-image {
+    height: 200px;
   }
 }
 .faq-text {
@@ -385,7 +384,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -456,11 +455,28 @@ p {
 #about-image {
   background: url("../img/about-image.jpg") no-repeat 50% 50%;
   background-size: cover;
+  height: 400px;
 }
 
 #contact-map {
   background: url("../img/contact-map.png") no-repeat 50% 50%;
   background-size: contain;
+  height: 500px;
+}
+
+#tube-tour-img {
+  background: url("../img/underground_sign.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#sherlock-tour-img {
+  background: url("../img/sherlock_statue.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#halloween-tour-img {
+  background: url("../img/halloween_cat.jpg") no-repeat 50% 35%;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
