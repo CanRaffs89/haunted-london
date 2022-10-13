@@ -11,3 +11,10 @@ function menuToggle() {
 // Add toggle function to menu icon
 document.querySelector('.menu-toggle')
     .addEventListener('click', menuToggle);
+
+// Initialise Flatpickr
+flatpickr("#flatpickr", {
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+});
