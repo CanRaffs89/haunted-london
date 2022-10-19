@@ -8,6 +8,14 @@ button {
     letter-spacing: 0.1rem;
     background: #000;
     border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        color: transparent;
+        text-shadow: 0 0 5px #fff;
+        transition: 0.5s all;
+    }
 
     a {
         text-decoration: none;
