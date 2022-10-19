@@ -16,11 +16,11 @@ document.querySelector('.menu-toggle')
 // ---------------------
 
 // Initialise Flatpickr
-// flatpickr("#flatpickr", {
-//     altInput: true,
-//     altFormat: "F j, Y",
-//     dateFormat: "Y-m-d",
-// });
+flatpickr("#flatpickr", {
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+});
 
 // ---------------------
 
