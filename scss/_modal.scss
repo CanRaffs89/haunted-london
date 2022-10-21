@@ -26,8 +26,19 @@
         .modal-content-info, .modal-content-input {
             width: 50%;
         }
+
+        .modal-content-input {
+          .modal-content-buttons {
+            .increment-button, #count {
+              display: inline-block;
+              height: 40px;
+              width: 40px;
+              margin: 0;
+              text-align: center;
+          }
+        }
+      }
     }
-    
   }
   
   .close {

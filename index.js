@@ -61,3 +61,21 @@ window.onclick = function(event) {
         }
     }
 }
+
+// Modal increment counter
+var counter = 0;
+document.getElementById("count").innerText = counter;
+
+function increase() {
+    if (counter !== 10) {
+        counter = counter + 1;
+    }
+    document.getElementById("count").innerText = counter;
+}
+
+function decrease() {
+    if (counter !== 0) {
+        counter = counter - 1;
+    }
+    document.getElementById("count").innerText = counter;
+}

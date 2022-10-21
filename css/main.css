@@ -342,6 +342,13 @@ button a:hover {
 .modal-content .modal-content-inner .modal-content-info, .modal-content .modal-content-inner .modal-content-input {
   width: 50%;
 }
+.modal-content .modal-content-inner .modal-content-input .modal-content-buttons .increment-button, .modal-content .modal-content-inner .modal-content-input .modal-content-buttons #count {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  text-align: center;
+}
 
 .close {
   color: #fff;
