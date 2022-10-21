@@ -1,7 +1,7 @@
 .menu-toggle {
   position: absolute;
   left: 20px;
-  top: 25px;
+  top: 30px;
   cursor: pointer;
   z-index: 2;
   display: none;
@@ -342,9 +342,6 @@ button a:hover {
 .modal-content .modal-content-inner .modal-content-info, .modal-content .modal-content-inner .modal-content-input {
   width: 50%;
 }
-.modal-content .modal-content-inner .modal-content-input {
-  padding-top: 20px;
-}
 
 .close {
   color: #fff;
@@ -376,6 +373,14 @@ input {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 810px) {
+  .modal-content .modal-content-inner {
+    flex-direction: column;
+  }
+  .modal-content .modal-content-inner .modal-content-info, .modal-content .modal-content-inner .modal-content-input {
+    width: 100%;
   }
 }
 .faq-text {
@@ -498,7 +503,7 @@ p, li {
 @media (max-width: 810px) {
   .content-container {
     flex-direction: column;
-    padding: 70px 50px 0 50px;
+    padding: 70px 40px 0 40px;
     justify-content: initial;
   }
 
@@ -523,7 +528,7 @@ p, li {
   }
 
   p, li {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 #about-image {
