@@ -148,7 +148,7 @@ nav .nav-logo {
     top: 40%;
   }
 }
-button {
+button, #submit-button {
   width: 200px;
   height: 56px;
   margin-top: 20px;
@@ -161,16 +161,16 @@ button {
   color: #fff;
   cursor: pointer;
 }
-button:hover {
+button:hover, #submit-button:hover {
   color: transparent;
   text-shadow: 0 0 5px #fff;
   transition: 0.5s all;
 }
-button a {
+button a, #submit-button a {
   text-decoration: none;
   color: #fff;
 }
-button a:hover {
+button a:hover, #submit-button a:hover {
   color: transparent;
   text-shadow: 0 0 5px #fff;
   transition: 0.5s all;
@@ -334,15 +334,19 @@ button a:hover {
   margin: 15% auto;
   padding: 70px 50px;
   border: 1px solid #fff;
-  width: 60%;
+  width: 430px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 .modal-content .modal-content-inner {
   display: flex;
+  flex-direction: column;
 }
-.modal-content .modal-content-inner .modal-content-info, .modal-content .modal-content-inner .modal-content-input {
-  width: 50%;
+.modal-content .modal-content-inner .modal-content-buttons {
+  margin: 20px 0;
 }
-.modal-content .modal-content-inner .modal-content-input .modal-content-buttons .increment-button, .modal-content .modal-content-inner .modal-content-input .modal-content-buttons #count {
+.modal-content .modal-content-inner .modal-content-buttons .increment-button, .modal-content .modal-content-inner .modal-content-buttons #count {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -367,8 +371,8 @@ button a:hover {
 
 input {
   padding: 10px;
-  margin: 0 auto;
-  height: 20px;
+  height: 40px;
+  width: 100%;
   cursor: pointer;
   background: #000;
   color: #fff;
@@ -383,11 +387,8 @@ input {
   }
 }
 @media (max-width: 810px) {
-  .modal-content .modal-content-inner {
-    flex-direction: column;
-  }
-  .modal-content .modal-content-inner .modal-content-info, .modal-content .modal-content-inner .modal-content-input {
-    width: 100%;
+  .modal-content {
+    width: 90%;
   }
 }
 .faq-text {
@@ -458,6 +459,10 @@ a#social-youtube {
     font-size: 1rem;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;
   margin: 0;

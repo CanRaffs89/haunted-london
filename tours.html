@@ -39,6 +39,12 @@
                 <h2>Tube Station Tours</h2>
                 <p>Strange figures. Odd noises. Unexplained happenings. Ghostly goings-on have been reported on the Underground since its opening in 1863. Experience them for yourself with a tour covering the most supernatural subterranean stations in London. Locations include Covent Garden, Bank, Elephant & Castle, and Bethnal Green.</p>
                 <p>Try a haunted Tube tour, and you'll have one more reason to dread the morning commute.</p>
+                <ul>
+                    <li>Duration 1 hour 30 minutes</li>
+                    <li>Tickets £15 per person</li>
+                    <li>Start at Bank Underground Station</li>
+                    <li>Finish at Bethnal Green Underground Station</li>
+                </ul>
                 <button class="modal-button" href="#tube-modal">Book Tour</button>
             </div>
             <div class="tour-container">
@@ -46,6 +52,12 @@
                 <h2>Sherlock Holmes Tours</h2>
                 <p>Sleuth your way around London, visiting locations made famous in Sir Arthur Conan Doyle's books, and TV and film adaptations. The tour begins in Piccadilly where Holmes and Watson first meet in the books, then takes in a variety of literary locations including grand hotels and gentleman's clubs, before finishing at Somerset House.</p>
                 <p>Dressing up is not necessary, but is highly encouraged!</p>
+                <ul>
+                    <li>Duration 2 hours</li>
+                    <li>Tickets £18 per person</li>
+                    <li>Start at Piccadilly Circus Underground Station</li>
+                    <li>Finish at Somerset House</li>
+                </ul>
                 <button class="modal-button" href="#sherlock-modal">Book Tour</button>
             </div>
             <div class="tour-container">
@@ -53,29 +65,31 @@
                 <h2>Jack the Ripper Tours</h2>
                 <p>Follow in the footsteps of the legendary Ripper himself on this bloodcurdling tour of the East End. Discover key locations from the myth, including the murder sites of the Canonical Five victims, and learn the identities of the prime suspects in the case. Expect sinister twists and turns as you experience the terror of Victorian Whitechapel.</p>
                 <p>This tour is not recommended for young children due to its dark and violent subject matter.</p>
+                <ul>
+                    <li>Duration 2 hours</li>
+                    <li>Tickets £15 per person</li>
+                    <li>Start at Aldgate Underground Station</li>
+                    <li>Finish at Spitalfields Market</li>
+                </ul>
                 <button class="modal-button" href="#halloween-modal">Book Tour</button>
             </div>
         </div>
 
         <!-- Booking Modals -->
         <div id="tube-modal" class="modal">
-            <div class="modal-content">
+            <div id="modal-inner-text" class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Book a Tour</h2>
                 <div class="modal-content-inner">
-                    <div class="modal-content-info">
-                        <h1>Tube Station Tours</h1>
-                        <ul>
-                            <li>Duration 1 hour 30 minutes</li>
-                            <li>Tickets £15 per person</li>
-                            <li>Start at Bank Underground Station</li>
-                            <li>Finish at Bethnal Green Underground Station</li>
-                        </ul>
+                    <h1>Reserve date and tickets</h1>
+                    <input type="text" name="" id="flatpickr" placeholder="Select date...">
+                    <div class="modal-content-buttons">
+                        <button class="increment-button" onclick="increase()">+</button>
+                        <h1 id="count"></h1>
+                        <button class="increment-button" onclick="decrease()">-</button>
                     </div>
-                    <div class="modal-content-input">
-                        <h1>Select date and tickets</h1>
-                        <input type="text" name="" id="flatpickr" placeholder="Select date...">
-                    </div>
+                    <input type="text" placeholder="Enter email..." name="email" required>
+                    <input id="submit-button" type="submit" value="Submit" onClick="redirectHome()">
                 </div>
             </div>
         </div>
@@ -84,18 +98,12 @@
                 <span class="close">&times;</span>
                 <h2>Book a Tour</h2>
                 <div class="modal-content-inner">
-                    <div class="modal-content-info">
-                        <h1>Sherlock Holmes Tours</h1>
-                        <ul>
-                            <li>Duration 2 hours</li>
-                            <li>Tickets £18 per person</li>
-                            <li>Start at Piccadilly Circus Underground Station</li>
-                            <li>Finish at Somerset House</li>
-                        </ul>
-                    </div>
-                    <div class="modal-content-input">
-                        <h1>Select date and tickets</h1>
-                        <input type="text" name="" id="flatpickr" placeholder="Select date...">
+                    <h1>Reserve date and tickets</h1>
+                    <input type="text" name="" id="flatpickr" placeholder="Select date...">
+                    <div class="modal-content-buttons">
+                        <button class="increment-button" onclick="increase()">+</button>
+                        <h1 id="count"></h1>
+                        <button class="increment-button" onclick="decrease()">-</button>
                     </div>
                 </div>
             </div>
@@ -105,23 +113,12 @@
                 <span class="close">&times;</span>
                 <h2>Book a Tour</h2>
                 <div class="modal-content-inner">
-                    <div class="modal-content-info">
-                        <h1>Jack the Ripper Tours</h1>
-                        <ul>
-                            <li>Duration 2 hours</li>
-                            <li>Tickets £15 per person</li>
-                            <li>Start at Aldgate Underground Station</li>
-                            <li>Finish at Spitalfields Market</li>
-                        </ul>
-                    </div>
-                    <div class="modal-content-input">
-                        <h1>Select date and tickets</h1>
-                        <input type="text" name="" id="flatpickr" placeholder="Select date...">
-                        <div class="modal-content-buttons">
-                            <button class="increment-button" onclick="increase()">+</button>
-                            <h1 id="count"></h1>
-                            <button class="increment-button" onclick="decrease()">-</button>
-                        </div>
+                    <h1>Reserve date and tickets</h1>
+                    <input type="text" name="" id="flatpickr" placeholder="Select date...">
+                    <div class="modal-content-buttons">
+                        <button class="increment-button" onclick="increase()">+</button>
+                        <h1 id="count"></h1>
+                        <button class="increment-button" onclick="decrease()">-</button>
                     </div>
                 </div>
             </div>

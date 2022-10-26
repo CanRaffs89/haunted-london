@@ -9,6 +9,10 @@
 @import 'contact';
 @import 'footer';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100%;
     margin: 0;

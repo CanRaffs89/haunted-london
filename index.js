@@ -79,3 +79,10 @@ function decrease() {
     }
     document.getElementById("count").innerText = counter;
 }
+
+// Modal Redirect on Submit
+function redirectHome() {
+    let text = "Thank you for your reservation! Redirecting you home...";
+    document.getElementById("modal-inner-text").innerText = text; 
+    setTimeout("location.href = '/index.html';",5000);
+}

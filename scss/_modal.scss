@@ -18,24 +18,24 @@
     margin: 15% auto;
     padding: 70px 50px;
     border: 1px solid #fff;
-    width: 60%;
+    width: 430px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
 
     .modal-content-inner {
         display: flex;
+        flex-direction: column;
 
-        .modal-content-info, .modal-content-input {
-            width: 50%;
-        }
+        .modal-content-buttons {
+          margin: 20px 0;
 
-        .modal-content-input {
-          .modal-content-buttons {
-            .increment-button, #count {
-              display: inline-block;
-              height: 40px;
-              width: 40px;
-              margin: 0;
-              text-align: center;
-          }
+          .increment-button, #count {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            margin: 0;
+            text-align: center;
         }
       }
     }
@@ -58,8 +58,8 @@
 
   input {
     padding: 10px;
-    margin: 0 auto;
-    height: 20px;
+    height: 40px;
+    width: 100%;
     cursor: pointer;
     background: #000;
     color: #fff;
@@ -72,12 +72,6 @@
 
   @media (max-width: 810px) {
     .modal-content {
-      .modal-content-inner {
-        flex-direction: column;
-
-        .modal-content-info, .modal-content-input {
-          width: 100%;
-        }
-      }
+      width: 90%;
     }
   }
