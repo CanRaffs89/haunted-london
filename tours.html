@@ -45,7 +45,7 @@
                     <li>Start at Bank Underground Station</li>
                     <li>Finish at Bethnal Green Underground Station</li>
                 </ul>
-                <button class="modal-button" href="#tube-modal">Book Tour</button>
+                <button class="modal-button" href="#booking-modal">Book Tour</button>
             </div>
             <div class="tour-container">
                 <div class="tour-image" id="sherlock-tour-img"></div>
@@ -58,7 +58,7 @@
                     <li>Start at Piccadilly Circus Underground Station</li>
                     <li>Finish at Somerset House</li>
                 </ul>
-                <button class="modal-button" href="#sherlock-modal">Book Tour</button>
+                <button class="modal-button" href="#booking-modal">Book Tour</button>
             </div>
             <div class="tour-container">
                 <div class="tour-image" id="halloween-tour-img"></div>
@@ -71,12 +71,12 @@
                     <li>Start at Aldgate Underground Station</li>
                     <li>Finish at Spitalfields Market</li>
                 </ul>
-                <button class="modal-button" href="#halloween-modal">Book Tour</button>
+                <button class="modal-button" href="#booking-modal">Book Tour</button>
             </div>
         </div>
 
         <!-- Booking Modals -->
-        <div id="tube-modal" class="modal">
+        <div id="booking-modal" class="modal">
             <div id="modal-inner-text" class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Book a Tour</h2>
@@ -90,36 +90,6 @@
                     </div>
                     <input type="text" placeholder="Enter email..." name="email" required>
                     <input id="submit-button" type="submit" value="Submit" onClick="redirectHome()">
-                </div>
-            </div>
-        </div>
-        <div id="sherlock-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Book a Tour</h2>
-                <div class="modal-content-inner">
-                    <h1>Reserve date and tickets</h1>
-                    <input type="text" name="" id="flatpickr" placeholder="Select date...">
-                    <div class="modal-content-buttons">
-                        <button class="increment-button" onclick="increase()">+</button>
-                        <h1 id="count"></h1>
-                        <button class="increment-button" onclick="decrease()">-</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="halloween-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Book a Tour</h2>
-                <div class="modal-content-inner">
-                    <h1>Reserve date and tickets</h1>
-                    <input type="text" name="" id="flatpickr" placeholder="Select date...">
-                    <div class="modal-content-buttons">
-                        <button class="increment-button" onclick="increase()">+</button>
-                        <h1 id="count"></h1>
-                        <button class="increment-button" onclick="decrease()">-</button>
-                    </div>
                 </div>
             </div>
         </div>
